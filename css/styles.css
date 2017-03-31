@@ -3,6 +3,10 @@ body {
 
 }
 
+em {
+  font-family: fantasy;
+}
+
 @font-face {
   font-family: Techno Hideo; src: url('fonts/techno_hideo.ttf'); }
 @font-face {
@@ -49,7 +53,7 @@ body {
   padding: 20px;
   box-shadow: 2px 2px 150px grey;
   width: 100%;
-  margin-left: 5%;
+  margin-left: 3%;
   margin-right: 5%;
   z-index: 1;
 }
@@ -68,4 +72,10 @@ body {
 
 .jumbotron p {
   font-size: 14px;
+}
+
+.zombie {
+  margin-top: 50px;
+  margin-left: 100px;
+  display: none;
 }

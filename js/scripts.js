@@ -25,16 +25,31 @@ var disqualifyTest = function(toBeTested) {       //This number is a disqualifyi
 $(document).ready(function() {
   $(".formOne").submit(function(event) {
     event.preventDefault();
-    var inputNumber = parseInt($('input#uxInput').val());   //This will take the user's input and establish it as a variable.
+    var inputText = $('input#uxInput').val();   //This will take the user's input and establish it as a variable.
+    if (inputText === "Beware of Zombies") {
+      $(".zombie").show();
+      var delayMillis = 2000; //2 seconds
+      setTimeout(function() {
+        $(".zombie").hide();
+      }, delayMillis);
+    }
+    var inputNumber = parseInt(inputText);
+    var directionInput = $("input:radio[name=direction]:checked").val();
     $("#displayHere").empty();                              //This line will clear the display every time the users presses submit.
     if (disqualifyTest(inputNumber) === true) {             //This will run a disqualifying test to make certain that the number put in was an actual 0-9 number.
-      $("#displayHere").empty();                            //This just empties the area where the text will be displayed
-      var finalPrintOut = pingPong(inputNumber);            //This will establish the output of the function as a variable at this end.
-      finalPrintOut.forEach(function(outputNumber) {        //This part goes through each item in the array and converts it into a list item.
-        $("#displayHere").append("<li>"+outputNumber+"</li>");
-      });
+      var finalPrintOut = pingPong(inputNumber);    //This will establish the output of the function as a variable at this end.
+      if (directionInput === 'forward') {
+        finalPrintOut.forEach(function(outputNumber) {        //This part goes through each item in the array and converts it into a list item.
+          $("#displayHere").append("<li>"+outputNumber+"</li>");
+        });
+      } else if (directionInput === 'reverse') {
+        finalPrintOut.forEach(function(outputNumber) {        //This part goes through each item in the array and converts it into a list item.
+          $("#displayHere").prepend("<li>"+outputNumber+"</li>");
+        });
+      }
     } else {
       alert("Please don't be ridiculous!");
+      return
     }
   });
 });

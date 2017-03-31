@@ -28,8 +28,8 @@ For any positive, integer input:
   - Example Input: '15'
   - Example Output: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong'
 * Ensure that the user has inputted nothing but numbers into the input.
-- Example Input: 'abcdef'
-- Example Output: 'That is not a positive integer.'
+  - Example Input: 'abcdef'
+  - Example Output: 'That is not a positive integer.'
 
 ## Installation
 
