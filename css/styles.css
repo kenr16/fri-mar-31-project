@@ -4,20 +4,18 @@ body {
 }
 
 @font-face {
-    src: url() format("truetype");
-}
-
-@font-face { font-family: Techno Hideo; src: url('fonts/techno_hideo.ttf'); }
- @font-face { font-family: Techno Hideo; font-weight: bold; src: url('fonts/techno_hideo_bold.ttf');}
+  font-family: Techno Hideo; src: url('fonts/techno_hideo.ttf'); }
+@font-face {
+  font-family: Techno Hideo; font-weight: bold; src: url('fonts/techno_hideo_bold.ttf');}
 
 .BackgroundBlue {
   background-color: #607D8B;
   width: 100%;
   height: 250px;
-  z-index: -4;
+  z-index: -1;
   top: 0;
   left: 0;
-
+  position: fixed;
 }
 
 .container {
@@ -29,7 +27,7 @@ body {
 .copywrite {
   color: #666666;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 .copywrite p {
@@ -42,13 +40,32 @@ body {
 
 .jumbotron {
   background-color: white;
-  z-index: 0;
-  top: 0;
   position: absolute;
-  margin-top: 7%;
+  margin-top: 10%;
   border-color: #b2ebf2;
   border-style: solid;
   border-width: 20px 0px 0px 0px;
+  border-radius: 10px;
+  padding: 20px;
   box-shadow: 2px 2px 150px grey;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 1;
+}
 
+.about {
+  background-color: white;
+  margin-top: 10%;
+  border-color: #b2ebf2;
+  border-style: solid;
+  border-width: 20px 0px 0px 0px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 150px grey;
+  margin-left: 1%;
+}
+
+.jumbotron p {
+  font-size: 14px;
 }
