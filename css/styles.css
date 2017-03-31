@@ -128,6 +128,8 @@ em {
   position: absolute;
   animation-name: pingpong;
   animation-duration: 10s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
 }
 
 #paddle {
@@ -140,6 +142,8 @@ em {
   position: absolute;
   animation-name: paddle;
   animation-duration: 10s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
 }
 
 @keyframes pingpong {
