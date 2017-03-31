@@ -7,7 +7,13 @@ var pingPong = function(userInput) {
   var allNumbers = [];
 
   for (var i = 1; i <= userInput; i++) {
-    allNumbers.push(i);
+    if (i % 3 === 0) {
+      allNumbers.push("ping");
+    } else {
+      allNumbers.push(i);
+    }
+
+    
   }
 
 
