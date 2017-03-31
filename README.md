@@ -6,7 +6,7 @@
 
 ## Overview
 
-This website will allow a user to enter a number, and from there generate a list of numbers from 1 to the number that the user entered.  For every third number, the site will replace it with "ping" and for every fifth number, the site will replace it with "pong."  If a number is a mutiple of both 3 and 5, the site will generate the input "pingpong."
+This website will allow a user to enter a number, and from there generate a list of numbers from 1 to the number that the user entered.  For every third number, the site will replace it with "ping" and for every fifth number, the site will replace it with "pong."  If a number is a mutiple of both 3 and 5, the site will generate the input "pingpong."  The link to the pubic gh-pages site can be fount at: https://kenr16.github.io/fri-mar-31-project
 
 ## Specifications
 

@@ -26,7 +26,9 @@ $(document).ready(function() {
   $(".formOne").submit(function(event) {
     event.preventDefault();
     var inputText = $('input#uxInput').val();   //This will take the user's input and establish it as a variable.
-    if (inputText === "Beware of Zombies") {
+    if (inputText === "Beware of zombies") {
+      var audio = new Audio('sound/zombie.mp3');
+      audio.play();
       $(".zombie").show();
       var delayMillis = 2000; //2 seconds
       setTimeout(function() {
@@ -37,6 +39,8 @@ $(document).ready(function() {
     var directionInput = $("input:radio[name=direction]:checked").val();
     $("#displayHere").empty();                              //This line will clear the display every time the users presses submit.
     if (disqualifyTest(inputNumber) === true) {             //This will run a disqualifying test to make certain that the number put in was an actual 0-9 number.
+      var audio = new Audio('sound/pingpong.mp3');
+      audio.play();
       var finalPrintOut = pingPong(inputNumber);    //This will establish the output of the function as a variable at this end.
       if (directionInput === 'forward') {
         finalPrintOut.forEach(function(outputNumber) {        //This part goes through each item in the array and converts it into a list item.
