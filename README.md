@@ -5,3 +5,4 @@
 4)Implement a function which pulls out numbers that are multiples of something else.
 5)Remove numbers from the list which are divisible by three, replace them with "Ping"
 6)Remove numbers from the list which are divisible by five, replace them with "Pong"
+7)Make certain that numbers divisible by both 3 and 5 return "pingpong" as a single entry rather than two separate entries.
