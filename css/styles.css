@@ -1,5 +1,6 @@
 body {
   background-color: #eceff1;
+  padding: 0px;
 
 }
 
@@ -15,7 +16,7 @@ em {
 .BackgroundBlue {
   background-color: #607D8B;
   width: 100%;
-  height: 250px;
+  height: 350px;
   z-index: -1;
   top: 0;
   left: 0;
@@ -45,7 +46,7 @@ em {
 .jumbotron {
   background-color: white;
   position: absolute;
-  margin-top: 10%;
+  margin-top: 15%;
   border-color: #b2ebf2;
   border-style: solid;
   border-width: 20px 0px 0px 0px;
@@ -56,6 +57,10 @@ em {
   margin-left: 3%;
   margin-right: 5%;
   z-index: 1;
+}
+
+.jumbotron p {
+  font-size: 14px;
 }
 
 .about {
@@ -70,12 +75,32 @@ em {
   margin-left: 1%;
 }
 
-.jumbotron p {
-  font-size: 14px;
-}
 
 .zombie {
   width: 100%;
   height: 100%;
   display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.topbar {
+  width: 100%;
+  height: 125px;
+  z-index: 1;
+  position: absolute;
+  margin: 0px;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  border-color: #b2ebf2;
+  border-style: solid;
+  border-width: 0px 0px 20px 0px;
+  font-family: fantasy;
+}
+
+.topbar h1 {
+  font-size: 50px;
+}
+
+.topbar img {
+  width: 110px;
 }
