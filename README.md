@@ -30,6 +30,9 @@ For any positive, integer input:
 * Ensure that the user has inputted nothing but numbers into the input.
   - Example Input: 'abcdef'
   - Example Output: 'That is not a positive integer.'
+* Allow the user to reverse the direction of the output:
+  - Example Input: '15'
+  - Example Output: 'pingpong, 14, 13, ping, 11, pong, ping, 8, 7, ping, pong, 4, ping, 2, 1'
 
 ## Installation
 
