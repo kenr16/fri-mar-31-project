@@ -41,6 +41,7 @@ $(document).ready(function() {
     if (disqualifyTest(inputNumber) === true) {             //This will run a disqualifying test to make certain that the number put in was an actual 0-9 number.
       $("#displayHere").empty();                            //This just empties the area where the text will be displayed
       var finalPrintOut = pingPong(inputNumber);            //This will establish the output of the function as a variable at this end.
+
       finalPrintOut.forEach(function(outputNumber) {
         $("#displayHere").append("<li>"+outputNumber+"</li>");
       });

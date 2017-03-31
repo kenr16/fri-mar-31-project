@@ -1,0 +1,54 @@
+body {
+  background-color: #eceff1;
+
+}
+
+@font-face {
+    src: url() format("truetype");
+}
+
+@font-face { font-family: Techno Hideo; src: url('fonts/techno_hideo.ttf'); }
+ @font-face { font-family: Techno Hideo; font-weight: bold; src: url('fonts/techno_hideo_bold.ttf');}
+
+.BackgroundBlue {
+  background-color: #607D8B;
+  width: 100%;
+  height: 250px;
+  z-index: -4;
+  top: 0;
+  left: 0;
+
+}
+
+.container {
+
+  height: 500px;
+
+}
+
+.copywrite {
+  color: #666666;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.copywrite p {
+  font-size: 12px;
+}
+
+.copywrite h4 {
+  font-family: Techno Hideo;
+}
+
+.jumbotron {
+  background-color: white;
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 7%;
+  border-color: #b2ebf2;
+  border-style: solid;
+  border-width: 20px 0px 0px 0px;
+  box-shadow: 2px 2px 150px grey;
+
+}
