@@ -104,3 +104,68 @@ em {
 .topbar img {
   width: 110px;
 }
+.track {
+  margin-top: 120px;
+  z-index: 1;
+  position: absolute;
+  top: 7px;
+}
+
+.track img {
+  width: 75px;
+  height: 75px;
+}
+
+#greenball {
+  width: 55px;
+  height: 55px;
+  border-color: #1aff1a;
+  border-style: solid;
+  border-width: 30px;
+  border-radius: 50%;
+  top: 15px;
+  left: 25px;
+  position: absolute;
+  animation-name: pingpong;
+  animation-duration: 10s;
+}
+
+#paddle {
+  width: 10px;
+  height: 85px;
+  border-color: #1aff1a;
+  border-style: solid;
+  border-width: 0px 0px 0px 20px;
+  top: 0px;
+  position: absolute;
+  animation-name: paddle;
+  animation-duration: 10s;
+}
+
+@keyframes pingpong {
+  0%  {left: 25px; top: 7px;}
+  10% {left: 1800px; top: 507px;}
+  20% {left: 25px; top: 1007px;}
+  30% {left: 1800px; top: 807px;}
+  40% {left: 25px; top: 607px;}
+  50% {left: 1800px; top: 407px;}
+  60% {left: 25px; top: 207px;}
+  70% {left: 1800px; top: 14px;}
+  80% {left: 25px; top: 407px;}
+  90% {left: 1800px; top: 207px;}
+  100% {left: 25px; top: 14px;}
+}
+
+@keyframes paddle {
+  0%  {left:15px; top: 0px;}
+  10% {left:15px; top: 500px;}
+  20% {left:15px; top: 1000px;}
+  30% {left:15px; top: 800px;}
+  40% {left:15px; top: 600px;}
+  50% {left:15px; top: 400px;}
+  60% {left:15px; top: 200px;}
+  70% {left:15px; top: 7px;}
+  80% {left:15px; top: 400px;}
+  90% {left:15px; top: 200px;}
+  100% {left:15px; top: 7px;}
+}
