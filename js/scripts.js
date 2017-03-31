@@ -2,7 +2,19 @@
 // Back End Code
 // *************************************************
 
+var pingPong = function(userInput) {
 
+  var allNumbers = [];
+
+  for (var i = 1; i <= userInput; i++) {
+    allNumbers.push(i);
+  }
+
+
+
+
+  return allNumbers
+}
 
 
 
@@ -16,9 +28,10 @@ var disqualifyTest = function(numInput) {
 // *************************************************
 $(document).ready(function() {
   $(".formOne").submit(function(event) {
+    event.preventDefault();
     var inputNumber = parseInt($('input#uxInput').val());
-    alert("Input Recieved!");
-    alert(inputNumber);
+    var finalPrintOut = pingPong(inputNumber);
+    $("#displayHere").text(finalPrintOut);
 
 
 
